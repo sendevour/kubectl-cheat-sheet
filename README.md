@@ -3,13 +3,15 @@ Cheat sheet for kubectl tool
 
 ## Short name for resources
 
-$ kubectl describe
+$ kubectl api-resources
 
 | Short name           | Full name                    |
 | -------------------- | ---------------------------- |
 |  csr                 |  certificatesigningrequests  |
 |  cs                  |  componentstatuses           |
 |  cm                  |  configmaps                  |
+|  crd                 |  customresourcedefinitions   |
+|  cj                  |  cronjobs                    |
 |  ds                  |  daemonsets                  |
 |  deploy              |  deployments                 |
 |  ep                  |  endpoints                   |
@@ -17,6 +19,7 @@ $ kubectl describe
 |  hpa                 |  horizontalpodautoscalers    |
 |  ing                 |  ingresses                   |
 |  limits              |  limitranges                 |
+|  netpol              |  networkpolicies             |
 |  ns                  |  namespaces                  |
 |  no                  |  nodes                       |
 |  pvc                 |  persistentvolumeclaims      |
@@ -29,7 +32,11 @@ $ kubectl describe
 |  quota               |  resourcequotas              |
 |  sa                  |  serviceaccounts             |
 |  svc                 |  services                    |
+|  sts                 |  statefulsets                |
+|  sc                  |  storageclasses              |
 
 
--n production  --namespace=production
--A             --all-namespaces
+| Short name       | Full name                 |
+| ---------------- | ------------------------- |
+|  -n production   |  --namespace=production   |
+|  -A              |  --all-namespaces=true    |
